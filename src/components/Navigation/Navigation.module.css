@@ -1,0 +1,15 @@
+.nav{
+margin-right: 30px;
+   color: black;
+padding: 10px;
+border-radius: 10%;
+
+}
+.activeNav{
+    background-color: teal;
+    color: azure;
+}
+.containerNav{
+
+    margin-bottom: 50px;
+}
