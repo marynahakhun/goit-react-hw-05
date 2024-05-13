@@ -64,7 +64,7 @@ const MovieDetailsPage = () => {
           Reviews
         </Link>
       </div>
-          <Suspense>
+          <Suspense fallback={<div>Please. wait...</div>}>
           <Outlet />
           </Suspense>
       </div>
