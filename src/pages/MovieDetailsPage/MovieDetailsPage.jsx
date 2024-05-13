@@ -1,4 +1,4 @@
-
+import { Suspense } from 'react'
 import  { useEffect, useRef, useState } from 'react'
 import { getMovieById } from '../../movies-api'
 import { Link, useParams, Outlet, useLocation} from 'react-router-dom'
@@ -64,8 +64,9 @@ const MovieDetailsPage = () => {
           Reviews
         </Link>
       </div>
-
-            <Outlet/>
+          <Suspense>
+          <Outlet />
+          </Suspense>
       </div>
 
   )
